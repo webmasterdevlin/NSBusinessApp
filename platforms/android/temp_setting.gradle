@@ -1,0 +1,13 @@
+android {
+            defaultConfig {
+                applicationId = "org.nativescript.NavApp"
+
+                if (false) {
+                    minSdkVersion = false
+                }
+
+                if (false) {
+                    targetSdkVersion = false
+                }
+            }
+        }

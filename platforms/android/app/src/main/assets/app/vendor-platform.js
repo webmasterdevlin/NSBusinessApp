@@ -1,0 +1,10 @@
+require("application");
+if (!global["__snapshot"]) {
+    // In case snapshot generation is enabled these modules will get into the bundle
+    // but will not be required/evaluated.
+    // The snapshot webpack plugin will add them to the tns-java-classes.js bundle file.
+    // This way, they will be evaluated on app start as early as possible.
+    require("ui/frame");
+    require("ui/frame/activity");
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidmVuZG9yLXBsYXRmb3JtLmFuZHJvaWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJ2ZW5kb3ItcGxhdGZvcm0uYW5kcm9pZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLENBQUMsYUFBYSxDQUFDLENBQUM7QUFDdkIsSUFBSSxDQUFDLE1BQU0sQ0FBQyxZQUFZLENBQUMsRUFBRTtJQUN2QixnRkFBZ0Y7SUFDaEYsc0NBQXNDO0lBQ3RDLG9GQUFvRjtJQUNwRixzRUFBc0U7SUFDdEUsT0FBTyxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ3BCLE9BQU8sQ0FBQyxtQkFBbUIsQ0FBQyxDQUFDO0NBQ2hDIiwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZShcImFwcGxpY2F0aW9uXCIpO1xuaWYgKCFnbG9iYWxbXCJfX3NuYXBzaG90XCJdKSB7XG4gICAgLy8gSW4gY2FzZSBzbmFwc2hvdCBnZW5lcmF0aW9uIGlzIGVuYWJsZWQgdGhlc2UgbW9kdWxlcyB3aWxsIGdldCBpbnRvIHRoZSBidW5kbGVcbiAgICAvLyBidXQgd2lsbCBub3QgYmUgcmVxdWlyZWQvZXZhbHVhdGVkLlxuICAgIC8vIFRoZSBzbmFwc2hvdCB3ZWJwYWNrIHBsdWdpbiB3aWxsIGFkZCB0aGVtIHRvIHRoZSB0bnMtamF2YS1jbGFzc2VzLmpzIGJ1bmRsZSBmaWxlLlxuICAgIC8vIFRoaXMgd2F5LCB0aGV5IHdpbGwgYmUgZXZhbHVhdGVkIG9uIGFwcCBzdGFydCBhcyBlYXJseSBhcyBwb3NzaWJsZS5cbiAgICByZXF1aXJlKFwidWkvZnJhbWVcIik7XG4gICAgcmVxdWlyZShcInVpL2ZyYW1lL2FjdGl2aXR5XCIpO1xufVxuIl19

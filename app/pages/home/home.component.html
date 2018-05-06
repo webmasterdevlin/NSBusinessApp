@@ -1,0 +1,17 @@
+<ActionBar class="action-bar" backgroundColor="#1e90ff">
+    <Label class="action-bar-title" text="{{title}} in NS"></Label>
+</ActionBar>
+<GridLayout rows="*, 10*, 2*">
+    <Label row="0" text="Business List" horizontalAlignment="center" fontSize="32"></Label>
+    <ListView row="1" [items]="BusinessList" class="list-group">
+        <ng-template let-business="item">
+            <FlexboxLayout [nsRouterLink]="['/edit', business.id]" flexDirection="row" class="list-group-item" >
+                <Label   [text]="business.name"></Label>
+            </FlexboxLayout>
+        </ng-template>
+    </ListView>
+    <Button row="2"  [nsRouterLink]="['/new']" backgroundColor="#1e90ff"
+            color="white" text="Add New" verticalAlignment="center"
+            horizontalAlignment="center" borderRadius="10">
+    </Button>
+</GridLayout>

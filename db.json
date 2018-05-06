@@ -1,0 +1,46 @@
+{
+  "business": [
+    {
+      "name": "APL",
+      "description": "Apple Inc.",
+      "head": "Tim Cook",
+      "code": "MB001",
+      "id": 1
+    },
+    {
+      "name": "MS",
+      "description": "Microsoft",
+      "head": "Satya Nadel",
+      "code": "MB002",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "name": "AZN",
+      "description": "Amazon",
+      "head": "Jef Bezos",
+      "code": "MB004"
+    },
+    {
+      "id": 5,
+      "name": "TSL",
+      "description": "Tesla",
+      "head": "Elon Musk",
+      "code": "MB006"
+    },
+    {
+      "id": 6,
+      "name": "POG",
+      "description": "pogi",
+      "head": "Devlin",
+      "code": "324"
+    },
+    {
+      "name": "RUB",
+      "description": "Ruby Corp",
+      "head": "Ruby Jane",
+      "code": "RJC001",
+      "id": 8
+    }
+  ]
+}

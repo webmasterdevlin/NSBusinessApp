@@ -1,0 +1,17 @@
+<ActionBar title="Edit Business" color="white" backgroundColor="#dc143c">
+    <NavigationButton ></NavigationButton>
+</ActionBar>
+<GridLayout columns="*,*" rows="*,*,*,*,*,2*,*" margin="20">
+    <TextField [(ngModel)]="business.name" row="0" col="0" colSpan="2" hint="CSC"></TextField>
+    <TextField [(ngModel)]="business.description" row="1" col="0" colSpan="2" hint="Capsule Corp"></TextField>
+    <TextField [(ngModel)]="business.head" row="2" col="0" colSpan="2" hint="Dr. Jira Takura"></TextField>
+    <TextField [(ngModel)]="business.code" row="3" col="0" colSpan="2" hint="CAS039"></TextField>
+
+    <Button row="5" col="0" verticalAlignment="center" horizontalAlignment="center"
+            color="white" backgroundColor="#ff8c00" text="Update" (tap)="onUpdate()"
+            borderRadius="10"></Button>
+    <Button row="5" col="1" verticalAlignment="center" horizontalAlignment="center"
+            color="white" backgroundColor="Crimson" text="Delete" (tap)="onDelete()"
+            borderRadius="10"></Button>
+
+</GridLayout>

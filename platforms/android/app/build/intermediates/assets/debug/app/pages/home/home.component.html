@@ -1,0 +1,16 @@
+<ActionBar class="action-bar" backgroundColor="#dc143c">
+    <Label class="action-bar-title" text="{{title}} in NS"></Label>
+</ActionBar>
+<GridLayout rows="*, 10*, *">
+    <Label row="0" text="Business List" horizontalAlignment="center" fontSize="32"></Label>
+    <RadListView row="1" [items]="BusinessList" class="list-group">
+        <ng-template let-business="item">
+            <FlexboxLayout flexDirection="row" class="list-group-item">
+                <Label [text]="business.name"></Label>
+            </FlexboxLayout>
+        </ng-template>
+    </RadListView>
+
+    <Button row="2" backgroundColor="#1e90ff" color="white" text="Add New" horizontalAlignment="center">
+    </Button>
+</GridLayout>

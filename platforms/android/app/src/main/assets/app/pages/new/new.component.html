@@ -1,0 +1,13 @@
+<ActionBar class="action-bar" title="New Business" >
+    <NavigationButton ></NavigationButton>
+</ActionBar>
+<GridLayout rows="*,*,*,*,*,2*,*" margin="20">
+    <TextField [(ngModel)]="name" row="0" hint="CSC"></TextField>
+    <TextField [(ngModel)]="description" row="1" hint="Capsule Corp"></TextField>
+    <TextField [(ngModel)]="head" row="2" hint="Dr. Jira Takura"></TextField>
+    <TextField [(ngModel)]="code" row="3" hint="CAS039"></TextField>
+    <Button row="5" verticalAlignment="center" horizontalAlignment="center"
+    color="white" backgroundColor="#1e90ff" text="Create" (tap)="OnSave()"
+    borderRadius="10"></Button>
+
+</GridLayout>
